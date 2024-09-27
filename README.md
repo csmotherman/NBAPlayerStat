@@ -47,6 +47,8 @@ The goal of this project is to predict NBA player performance in upcoming games 
 - **Modularity:** Refactor code into separate functions and modules for better maintainability.
 - **Visualization:** Add visualizations (e.g., player performance charts) to enhance data analysis.
 - **User Interface:** Develop a simple front-end interface to allow users to input custom player or team data for predictions.
+- **Automation:** Implement automated data scraping to collect all necessary information, such as today's games, player teams, and positions, so users don't need to manually input this data.
+
 
 ## Installation
 1. Clone the repository:
