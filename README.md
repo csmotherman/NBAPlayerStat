@@ -18,7 +18,7 @@ This project involves building a predictive model for NBA player statistics usin
 The goal of this project is to predict NBA player performance in upcoming games by using a combination of historical game logs, player stats, and defensive metrics. This tool is useful for daily fantasy sports analysis, sports betting, and general NBA analytics.
 
 ## Data Collection
-- Uses `nba_api` to retrieve player game logs and team opponent stats.
+- Uses [`nba_api`](https://github.com/swar/nba_api) to retrieve player game logs and team opponent stats.
 - Scrapes data from [hashtagbasketball.com](https://hashtagbasketball.com/nba-defense-vs-position) to collect defense versus position metrics.
 - Imports player minute projections from an external source using web scraping with BeautifulSoup.
 
