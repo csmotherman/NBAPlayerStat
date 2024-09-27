@@ -17,23 +17,28 @@ This project involves building a predictive model for NBA player statistics usin
 ## Project Overview
 The goal of this project is to predict NBA player performance in upcoming games by using a combination of historical game logs, player stats, and defensive metrics. This tool is useful for daily fantasy sports analysis, sports betting, and general NBA analytics.
 
-## Data Collection
-- Uses [`nba_api`](https://github.com/swar/nba_api) to retrieve player game logs and team opponent stats.
-- Scrapes data from [hashtagbasketball.com](https://hashtagbasketball.com/nba-defense-vs-position) to collect defense versus position metrics.
-- Imports player minute projections from an external source using web scraping with BeautifulSoup.
+1. **Data Collection:** 
+   - Utilizes the [`nba_api`](https://github.com/swar/nba_api) to fetch historical player game logs and team opponent stats.
+   - Uses web scraping (BeautifulSoup) to collect defensive statistics by position from [hashtagbasketball.com](https://hashtagbasketball.com/nba-defense-vs-position).
+   - Scrapes an external source to import player minute projections for the current day’s games.
 
-## Data Cleaning and Processing
-- Cleans defense vs. position stats by removing ranks and converting columns to appropriate data types.
-- Converts team names to standard abbreviations for consistency.
-- Processes player game logs to extract relevant data and handle missing or unusual entries.
-  
-## Feature Engineering
-- Converts player stats to a per-minute basis for more accurate performance comparisons.
-- Combines various data sources, such as recent team performance and individual player minutes, to enhance predictive power.
+2. **Data Cleaning and Preprocessing:** 
+   - Cleans and processes the scraped data by removing unnecessary ranks and converting columns to the appropriate data types.
+   - Converts team names into standardized abbreviations for consistency.
+   - Extracts relevant player game logs using the `nba_api` and filters the data to focus on players with substantial playing time.
+   - Converts player stats to a per-minute basis to standardize comparisons across players with different playtimes.
 
-## Modeling
-- Applies predictive models (e.g., Linear Regression, Logistic Regression, etc.) to forecast player stats like points, rebounds, and assists.
-- Utilizes Python libraries such as Pandas, NumPy, and Scikit-learn for data analysis and modeling.
+3. **Feature Engineering:** 
+   - Creates new features, such as per-minute statistics, to enhance the predictive power of the model.
+   - Merges various data sources, including recent team performance, individual player stats, and defensive metrics.
+
+4. **Modeling:** 
+   - Prepares the processed data for modeling, applying statistical methods (e.g., linear regression, logistic regression) to predict key player performance metrics like points, rebounds, and assists.
+   - Automates data collection and processing to provide daily predictions for player performance.
+
+5. **Output and Results:** 
+   - Outputs the cleaned and processed data as DataFrames for further analysis and use in the predictive models.
+   - Displays the predicted statistics for players, providing valuable insights for sports analysis, fantasy sports, or sports betting.
 ## Usage
 1. **Data Collection:** Run the script to collect and clean data using the NBA API and web scraping.
 2. **Data Analysis:** Use the pre-defined functions to process and analyze player performance.
