@@ -34,6 +34,19 @@ The goal of this project is to predict NBA player performance in upcoming games 
 ## Modeling
 - Applies predictive models (e.g., Linear Regression, Logistic Regression, etc.) to forecast player stats like points, rebounds, and assists.
 - Utilizes Python libraries such as Pandas, NumPy, and Scikit-learn for data analysis and modeling.
+## Usage
+1. **Data Collection:** Run the script to collect and clean data using the NBA API and web scraping.
+2. **Data Analysis:** Use the pre-defined functions to process and analyze player performance.
+3. **Modeling:** Apply predictive models to generate forecasts for player stats in upcoming games.
+4. **Results:** Review the results and predictions, which are outputted as a DataFrame.
+
+> **Note:** Ensure you have an active internet connection to fetch data via the NBA API and web scraping.
+
+## Future Improvements
+- **Error Handling:** Implement robust error checking for API requests and data processing steps.
+- **Modularity:** Refactor code into separate functions and modules for better maintainability.
+- **Visualization:** Add visualizations (e.g., player performance charts) to enhance data analysis.
+- **User Interface:** Develop a simple front-end interface to allow users to input custom player or team data for predictions.
 
 ## Installation
 1. Clone the repository:
